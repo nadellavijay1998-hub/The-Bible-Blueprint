@@ -465,6 +465,30 @@
         .song-card p {
             color: var(--text-muted);
             font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .song-icon {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .song-link {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .song-link:hover {
+            background-color: var(--accent-light-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
         }
 
         /* Articles Section */
@@ -921,20 +945,22 @@
         
         <div class="worship-grid">
             <div class="song-card">
-                <h4>🎵 Amazing Grace</h4>
-                <p>A timeless hymn celebrating God's mercy and unconditional love</p>
+                <div class="song-icon">🎵</div>
+                <h4>Don't Step Back</h4>
+                <p>This powerful Christian worship song reminds us that "no sinner is beyond the grace of Jesus Christ"</p>
+                <a href="https://youtu.be/1erQZeM3tmg" target="_blank" class="song-link">&#9654; Watch on YouTube</a>
             </div>
             <div class="song-card">
-                <h4>🎵 It Is Well</h4>
-                <p>Finding peace in Christ amid life's storms and struggles</p>
+                <div class="song-icon">🎵</div>
+                <h4>పాపివైనా రా</h4>
+                <p>Inspired by 1 Timothy 1:16-17, where Apostle Paul testifies that even the worst of sinners received mercy to display Christ's perfect patience.</p>
+                <a href="https://youtu.be/NYLen_BcFDQ" target="_blank" class="song-link">&#9654; Watch on YouTube</a>
             </div>
             <div class="song-card">
-                <h4>🎵 Great Is Thy Faithfulness</h4>
-                <p>Reflecting on God's constant presence and renewal each day</p>
-            </div>
-            <div class="song-card">
-                <h4>🎵 Jesus Loves Me</h4>
-                <p>Foundational truth of God's love, profound in its simplicity</p>
+                <div class="song-icon">🎵</div>
+                <h4>కర్తయైన క్రీస్తుపైనే</h4>
+                <p>This song challenges us to shift our trust from human intellect and worldly power toward a singular focus on Jesus Christ as our ultimate source of strength.</p>
+                <a href="https://youtu.be/l_6DC2frRLs" target="_blank" class="song-link">&#9654; Watch on YouTube</a>
             </div>
         </div>
     </section>
@@ -986,7 +1012,7 @@
                     <div class="contact-icon">📧</div>
                     <div>
                         <p><strong>Email</strong></p>
-                        <p><a href="mailto:nadellavijay1998@gmail.com" style="color: var(--accent-gold); text-decoration: none;">nadellavijay1998@gmail.com</a></p>
+                        <p><a href="/cdn-cgi/l/email-protection#dbb5babfbeb7b7baadb2b1baa2eae2e2e39bbcb6bab2b7f5b8b4b6" style="color: var(--accent-gold); text-decoration: none;"><span class="__cf_email__" data-cfemail="442a252021282825322d2e253d757d7d7c042329252d286a272b29">[email&#160;protected]</span></a></p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -1018,7 +1044,7 @@
             <!-- Hidden iframe target for Google Forms POST -->
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="iframeLoaded()"></iframe>
 
-            <script>
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
                 const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSe/formResponse';
                 const ENTRY_NAME    = 'entry.180576961';
                 const ENTRY_EMAIL   = 'entry.346303654';
@@ -1208,11 +1234,4 @@
         // Add animation on scroll for cards
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-             
+            rootMarg
